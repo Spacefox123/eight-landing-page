@@ -1,0 +1,43 @@
+main {
+    height: 100vh;
+}
+
+img {
+    width: 40vw;
+}
+
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.blur {
+    transition: 0.5s ease;
+}
+
+.blur:hover,
+.blur:focus {
+    -webkit-filter: blur(10px); /* Safari 6.0 - 9.0 */
+    filter: blur(10px);
+}
+
+.card {
+    height: 95vh;
+    background-color: cyan;
+}
+
+.center {
+    text-align: center;
+  }
+
+footer {
+    background-color: cadetblue;
+    height: 5vh;
+    text-align: center;
+    width: auto;
+}
+
+.test {
+    background-color: cyan;
+}

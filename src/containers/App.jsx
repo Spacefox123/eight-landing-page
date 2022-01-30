@@ -1,28 +1,33 @@
-import React, { useState } from "react";
+import React, { Component } from "react";
 import Slide from "../components/Slide";
+import Foot from "../components/Foot";
 import "tachyons";
 import "./App.css";
 
-const App = () => {
-  const [card1, setCard1] = useState([
-    "Eurotees",
-    "../images/eurotees.jpg",
-    "https://www.eurotees.eu/",
-  ]);
-  const [card2, setCard2] = useState([
-    "DamnPlastic",
-    "../images/damnplastic.png",
-    "https://www.damnplastic.com/",
-  ]);
+class App extends Component {
+  render() {
+    const card1 = {
+      name: "Eurotees",
+      image: require("../images/eurotees.jpg"),
+      link: "https://www.eurotees.eu/",
+    };
 
-  return (
-    <main>
-      <div className="container">
-        <Slide props={card1} />
-        <Slide props={card2} />
-      </div>
-    </main>
-  );
-};
+    const card2 = {
+      name: "DamnPlastic",
+      image: require("../images/damnplastic.png"),
+      link: "https://www.damnplastic.com/",
+    };
+
+    return (
+      <main>
+        <div className="layout">
+          <Slide props={card1} />
+          <Slide props={card2} />
+        </div>
+        <Foot />
+      </main>
+    );
+  }
+}
 
 export default App;
