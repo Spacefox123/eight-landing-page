@@ -15,12 +15,15 @@ const Slide = ({ props }) => {
   }
 
   return (
-    <div className={"grow br1 card " + side}>
-      <a href={props.link}>
-        <h1 className="f1 center">{props.name}</h1>
-
-        <img src={props.image} alt=" " className="br2 blur img-fluid" />
-      </a>
+    <div className={"br1 card " + side}>
+      <div className="wrapper">
+        <a href={props.link}>
+          <img src={props.image} alt=" " className="image" />
+          <div class="middle">
+            <div class="text">{props.name}</div>
+          </div>
+        </a>
+      </div>
     </div>
   );
 };
