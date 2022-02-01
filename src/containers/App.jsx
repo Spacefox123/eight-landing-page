@@ -13,7 +13,7 @@ class App extends Component {
     };
 
     const card2 = {
-      name: "DamnPlastic",
+      name: "Damn Plastic",
       image: require("../images/damnplastic.png"),
       link: "https://www.damnplastic.com/",
     };

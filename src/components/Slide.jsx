@@ -7,7 +7,7 @@ const Slide = ({ props }) => {
     case "Eurotees":
       side = "animate__animated animate__fadeInLeft";
       break;
-    case "DamnPlastic":
+    case "Damn Plastic":
       side = "animate__animated animate__fadeInRight";
       break;
     default:
